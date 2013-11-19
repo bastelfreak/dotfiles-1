@@ -12,6 +12,7 @@ For example: *.xinitrc*
 Moreover you can find a PKGBUILD-file for archlinux and other pacman-based systems
 in this directory for easy install.  
 Just type in: *makepkg -si*  
+
 nice greetings,
 
 **Shibumi**
