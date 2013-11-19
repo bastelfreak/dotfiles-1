@@ -1,0 +1,19 @@
+out_to_console yes
+out_to_x no
+background no
+# Change the following line for a shorter or longer update-interval ( in seconds )
+update_interval 2 
+total_run_times 0
+use_spacer none
+
+
+#This Conky-config is for the DWM statusbar. It shows Battery Status, Ram Usage, CPU Usage, uptime and date and current time.
+
+
+TEXT
+
+Battery Status $battery  :: Ram Usage $mem/$memmax - $memperc% :: CPU Usage $cpu%  :: Uptime $uptime :: ${time %Y-%m-%d %H:%M}  
+
+
+
+

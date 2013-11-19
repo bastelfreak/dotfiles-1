@@ -1,0 +1,47 @@
+urxvt*foreground: grey
+urxvt*background: black
+urxvt*scrollBar: false
+urxvt*font: xft:Monospace:pixelsize=11
+!If you want transparent and shading uncomment the following lines
+!urxvt*.transparent: true
+!urxvt*.shading: 40
+
+
+! An Awesome color theme trust me ;-)
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+urxvt*color0:    #000000
+urxvt*color1:    #CD0000
+urxvt*color2:    #00CD00
+urxvt*color3:    #CDCD00
+urxvt*color4:    #0000CD
+urxvt*color5:    #CD00CD
+urxvt*color6:    #00CDCD
+urxvt*color7:    #E5E5E5
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #7F7F7F
+urxvt*color9:    #FF0000
+urxvt*color10:    #00FF00
+urxvt*color11:    #FFFF00
+urxvt*color12:    #5C5CFF
+urxvt*color13:    #FF00FF
+urxvt*color14:    #00FFFF
+urxvt*color15:    #FFFFFF
