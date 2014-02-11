@@ -2,12 +2,11 @@ urxvt*foreground: grey
 urxvt*background: black
 urxvt*scrollBar: false
 urxvt*font: xft:Monospace:pixelsize=11
-!If you want transparent and shading uncomment the following lines
 !urxvt*.transparent: true
 !urxvt*.shading: 40
 
 
-! An Awesome color theme trust me ;-)
+!!!!!!!!!!OLD COLOURS!!!!!!!!!!!
 ! Normal
 ! color0    black
 ! color1    red
@@ -18,14 +17,14 @@ urxvt*font: xft:Monospace:pixelsize=11
 ! color6    cyan
 ! color7    white
 
-urxvt*color0:    #000000
-urxvt*color1:    #CD0000
-urxvt*color2:    #00CD00
-urxvt*color3:    #CDCD00
-urxvt*color4:    #0000CD
-urxvt*color5:    #CD00CD
-urxvt*color6:    #00CDCD
-urxvt*color7:    #E5E5E5
+!urxvt*color0:    #000000
+!urxvt*color1:    #CD0000
+!urxvt*color2:    #00CD00
+!urxvt*color3:    #CDCD00
+!urxvt*color4:    #0000CD
+!urxvt*color5:    #CD00CD
+!urxvt*color6:    #00CDCD
+!urxvt*color7:    #E5E5E5
 
 ! Light
 ! color8    black
@@ -37,11 +36,64 @@ urxvt*color7:    #E5E5E5
 ! color14    cyan
 ! color15    white
 
-urxvt*color8:    #7F7F7F
-urxvt*color9:    #FF0000
-urxvt*color10:    #00FF00
-urxvt*color11:    #FFFF00
-urxvt*color12:    #5C5CFF
-urxvt*color13:    #FF00FF
-urxvt*color14:    #00FFFF
-urxvt*color15:    #FFFFFF
+!urxvt*color8:    #7F7F7F
+!urxvt*color9:    #FF0000
+!urxvt*color10:    #00FF00
+!urxvt*color11:    #FFFF00
+!urxvt*color12:    #5C5CFF
+!urxvt*color13:    #FF00FF
+!urxvt*color14:    #00FFFF
+!urxvt*color15:    #FFFFFF
+!! base16!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!{{{
+
+!!!!!!!!!!!!OLD COLOURS END!!!!!!!!!!!!!!!!!
+
+
+
+!!!!!!BASE 16!!!!!!!!
+#define base00 #151515
+#define base01 #9bc63c
+#define base02 #f0a63e
+#define base03 #505050
+#define base04 #50aacf
+#define base05 #d0d0d0
+#define base06 #bb64a9
+#define base07 #ffffff
+#define base08 #ac4142
+#define base09 #be2f30
+#define base0A #f4bf75
+#define base0B #90a959
+#define base0C #75b5aa
+#define base0D #6a9fb5
+#define base0E #aa759f
+#define base0F #5dcdba
+
+*.foreground: base05
+*.background: base00
+*.cursorColor: base05
+!Black
+*.color0: base00
+*.color8: base03
+!Red
+*.color1: base08
+*.color9: base09
+!Green
+*.color2: base0B
+*.color10: base01
+!Yellow
+*.color3: base0A
+*.color11: base02
+!Blue
+*.color4: base0D
+*.color12: base04
+!Magenta
+*.color5: base0E
+*.color13: base06
+!Cyan
+*.color6: base0C
+*.color14: base0F
+!White
+*.color7: base05
+*.color15: base07
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}} 

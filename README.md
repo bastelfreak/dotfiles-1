@@ -6,6 +6,7 @@ You can find the other stuff in the "other"-directory. There are:
 * Xresources // My urxvt-config
 * xinitrc // For autostarting the conky statusbar
 * conkyrc // My conky-config
+* dunstrc // For the dunst notify daemon thx to Rasi
 
 You should move all three files in your homedirectory as hidden files.  
 For example: *.xinitrc*
