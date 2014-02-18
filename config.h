@@ -49,6 +49,8 @@ static const Layout layouts[] = {
 static const char *dmenucmd[] = { "dmenu_run", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvtc", NULL };
 static const char *teiler[] = {"teiler", NULL};
+static const char *volumeup[] = {"amixer", "set", "Master", "5%+", NULL};
+static const char *volumedown[] = {"amixer", "set", "Master", "5%-", NULL};
 
 #include "nextprevtag.c" 
 
@@ -74,6 +76,8 @@ static Key keys[] = {
   { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
   { MODKEY,                       XK_Right,  view_adjacent,  { .i = +1 } },
   { MODKEY,                       XK_Left,   view_adjacent,  { .i = -1 } },
+  { MODKEY,                       XK_Up,     spawn,          {.v = volumeup} },
+  { MODKEY,                       XK_Down,   spawn,          {.v = volumedown} },
   { MODKEY,                       XK_space,  setlayout,      {0} },
   { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
   { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
