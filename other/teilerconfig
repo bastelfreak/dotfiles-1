@@ -5,9 +5,9 @@ source $HOME/.config/dmenurc
 
 #   general options
 
-img_path=$HOME
+img_path=/tmp/
 paste_path=/tmp/
-vid_path=$HOME
+vid_path=/tmp/
 
 SCREENCAST_PIDFILE=/tmp/$USER-teiler-screencast.pid
 INDICATOR_PIDFILE=/tmp/$USER-teiler-indicator.pid
