@@ -10,6 +10,8 @@ You can find the other stuff in the "other"-directory. There are:
 * teilerconfig // For Teiler 
 * muttrc // My mutt config file
 * crypto // Mutt with PGP
+* weather // please move this to /usr/bin/weather and change the weather ID-code in
+  the conkyrc with http://edg3.co.uk/snippets/weather-location-codes/
 
 You should move all three files in your homedirectory as hidden files.  
 For example: *.xinitrc*
