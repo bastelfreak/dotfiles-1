@@ -1,18 +1,14 @@
 out_to_console yes
 out_to_x no
 background no
-# Change the following line for a shorter or longer update-interval ( in seconds )
-update_interval 2 
+update_interval 2
 total_run_times 0
 use_spacer none
 
 
-#This Conky-config is for the DWM statusbar. It shows Battery Status, Ram Usage, CPU Usage, uptime and date and current time.
-
-
 TEXT
 
-Battery Status $battery  :: Ram Usage $mem/$memmax - $memperc% :: CPU Usage $cpu%  :: Uptime $uptime :: ${time %Y-%m-%d %H:%M}  
+${execi 300 /usr/bin/weather "EUR|DE|GMXX6207|Clausthal"} :: Network ${if_up eth0} Wired Up ${upspeed eth0}Down ${downspeed eth0} $endif${if_up wlan0} Wifi Up ${upspeed wlan0}Down ${downspeed wlan0}$endif:: Battery Status $battery  :: Ram Usage $mem/$memmax - $memperc% :: CPU Usage $cpu%  :: Uptime $uptime :: ${time %Y-%m-%d %H:%M}  
 
 
 
