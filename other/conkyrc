@@ -8,7 +8,7 @@ use_spacer none
 
 TEXT
 
-${execi 300 /usr/bin/weather "EUR|DE|GMXX6207|Clausthal"} :: Network ${if_up eth0} Wired Up ${upspeed eth0}Down ${downspeed eth0} $endif${if_up wlan0} Wifi Up ${upspeed wlan0}Down ${downspeed wlan0}$endif:: Battery Status $battery  :: Ram Usage $mem/$memmax - $memperc% :: CPU Usage $cpu%  :: Uptime $uptime :: ${time %Y-%m-%d %H:%M}  
+${execi 300 /usr/bin/weather "EUR|DE|GMXX6207|Clausthal"} :: Network ${if_up eth0} Wired Up ${upspeed eth0} Down ${downspeed eth0} $endif${if_up wlan0} Wifi Up ${upspeed wlan0} Down ${downspeed wlan0}$endif :: Battery Status $battery  :: Ram Usage $mem/$memmax - $memperc% :: CPU Usage $cpu%  :: Uptime $uptime :: ${time %Y-%m-%d %H:%M}  
 
 
 
