@@ -1,7 +1,7 @@
 Hello,
 
-Here is my personal DWM-config and some other useful stuff. Feel free to edit and share.  
-You can find the other stuff in the "other"-directory. There are:  
+Here is my personal DWM-config and some other useful configs. Feel free to edit and share.  
+Here are all my config files:
   
 * Xresources // My urxvt-config
 * xinitrc // For autostarting the conky statusbar
@@ -10,14 +10,9 @@ You can find the other stuff in the "other"-directory. There are:
 * teilerconfig // For Teiler 
 * muttrc // My mutt config file
 * crypto // Mutt with PGP
+* vimrc // my vim config file
 * weather // please move this to /usr/bin/weather and change the weather ID-code in
   the conkyrc with http://edg3.co.uk/snippets/weather-location-codes/
-
-You should move all three files in your homedirectory as hidden files.  
-For example: *.xinitrc*
-Moreover you can find a PKGBUILD-file for archlinux and other pacman-based systems
-in this directory for easy install.  
-Just type in: *makepkg -si*  
 
 nice greetings,
 
