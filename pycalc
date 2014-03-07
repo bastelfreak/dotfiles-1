@@ -1,0 +1,51 @@
+#!/usr/bin/env python2
+#-*- coding: utf-8 -*-
+#
+# pycalc.py - A simple calculator for dec, hex, oct and bin
+#
+# Copyright (c) 2014 by Christian Rebischke <echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/
+#
+#======================================================================
+# Author: Christian Rebischke alias Shibumi
+# Github: https://github.com/shibumi
+# Email: echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d
+# GPG: E2C0DC2A
+#
+
+import sys
+
+
+if len(sys.argv) == 2:
+  number = sys.argv[1]
+  number = int(number)
+  print("dec to hex: %s") % hex(number)
+  print("dec to bin: %s") % bin(number)
+  print("dec to oct: %s") % oct(number)
+
+if len(sys.argv) > 2:
+  number = sys.argv[1]
+  base = sys.argv[2]
+
+  output = int(number, int(base))
+  print("base %s to dec: %s") % (base, output)
+  print("base %s to hex: %s") % (base, hex(output))
+  print("base %s to bin: %s") % (base, bin(output))
+  print("base %s to oct: %s") % (base, oct(output))
+  exit()
+
+elif len(sys.argv) > 3 or len(sys.argv) < 2:
+  print("Usage: pycalc <number> or <number> <base> ")
+  exit(1)
