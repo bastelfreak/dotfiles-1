@@ -12,6 +12,12 @@ source  ~/.crypto
 set from="My.Email@gmail.com"
 set use_from = yes
 
+
+#Auto-html view with mutt
+#checkout the mailcap file
+auto_view text/html
+
+
 # -*- muttrc -*-
 #
 # Color settings for mutt.
