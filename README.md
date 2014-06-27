@@ -9,6 +9,7 @@ Here are all my config files:
 * dunstrc // For the dunst notify daemon thx to Rasi
 * teilerconfig // For Teiler 
 * muttrc // My mutt config file
+* mailcap // extends mutt with html-support
 * crypto // Mutt with PGP
 * vimrc // my vim config file
 * pycalc // a simple calculator for bin, hex, oct and dec in python2
