@@ -17,6 +17,7 @@ Here are all my config files:
 * issue // my issue file move it to /etc/issue
 * weather // please move this to /usr/bin/weather and change the weather ID-code in
   the conkyrc with http://edg3.co.uk/snippets/weather-location-codes/
+* Added my dhexrc
 
 nice greetings,
 
