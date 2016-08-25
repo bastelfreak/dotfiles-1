@@ -13,3 +13,4 @@ function pkgcleanup {
     mv /tmp/cleanup-$random/.SRCINFO .
     rmdir /tmp/cleanup-$random
 }
+zstyle ':completion:*:hosts' hosts 
