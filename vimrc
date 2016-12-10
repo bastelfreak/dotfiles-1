@@ -7,7 +7,7 @@ highlight PmenuSel ctermbg=white ctermfg=black
 filetype plugin on
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null 
+command W w !sudo tee > /dev/null %
 set wildmenu
 set hidden
 set hlsearch
