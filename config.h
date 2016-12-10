@@ -67,9 +67,12 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL};
 static const char *termcmd[]  = { "termite", NULL };
 static const char *teiler[] = {"teiler", NULL};
+static const char *rofipass[] = {"rofi-pass", NULL};
 static const char *volumeup[] = {"pamixer", "-i", "5", NULL};
 static const char *volumedown[] = {"pamixer", "-d", "5", NULL};
 static const char *volumemute[] = {"pamixer", "-t", NULL};
+static const char *lockscreen[] = {"i3lock", "-p", "win", "-u", "-t", "-i", "/usr/share/i3lock/windows_10_small.png", NULL};
+static const char *lockscreenh[] = {"i3lock", "-p", "win", "-u", "-t", "-i", "/usr/share/i3lock/windows_10.png", NULL};
 
 #include "nextprevtag.c"
 
@@ -78,6 +81,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
   { MODKEY,                       XK_s,      spawn,          {.v = teiler } },
+  { MODKEY,                       XK_p,      spawn,          {.v = rofipass } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -97,6 +101,8 @@ static Key keys[] = {
   { MODKEY,                       XK_Up,     spawn,          {.v = volumeup} },
   { MODKEY,                       XK_Down,   spawn,          {.v = volumedown} },
   { MODKEY|ShiftMask,             XK_m,     spawn,          {.v = volumemute} },
+  { MODKEY|ShiftMask,             XK_l,     spawn,          {.v = lockscreen} },
+  { MODKEY|ShiftMask,             XK_h,     spawn,          {.v = lockscreenh} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },

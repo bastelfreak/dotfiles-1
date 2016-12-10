@@ -5,6 +5,14 @@ set bg=light
 highlight Pmenu ctermbg=black ctermfg=white
 highlight PmenuSel ctermbg=white ctermfg=black
 filetype plugin on
+" :W sudo saves the file 
+" (useful for handling the permission-denied error)
+command W w !sudo tee % > /dev/null 
+set wildmenu
+set hidden
+set hlsearch
+set autoindent
+set smartindent
 au FileType python setl ts=4 sts=4 sw=4 et tw=79
 au FileType c setl ts=8 sts=8 sw=8 et tw=79
 au FileType rust setl ts=4 sts=4 sw=4 et tw=79
@@ -23,4 +31,18 @@ let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 map <C-J> :bprev!<CR>
 map <C-K> :bnext!<CR>
+set guifont=PowerlineSymbols
+set encoding=utf-8
 let g:airline_powerline_fonts = 1
+set undofile                " Save undo's after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+"function! AirlineWebDevIcons(...)
+"  let w:airline_section_x = get(w:, 'airline_section_x', g:airline_section_x)
+"  let w:airline_section_x .= ' %{WebDevIconsGetFileTypeSymbol()} '
+"  if g:webdevicons_enable_airline_statusline_fileformat_symbols
+"    let w:airline_section_y = ' %{&fenc . " " . WebDevIconsGetFileFormatSymbol()} '
+"  endif
+"endfunction
+"call airline#add_statusline_func('AirlineWebDevIcons')
