@@ -1,0 +1,10 @@
+[user]
+    name = Christian Rebischke
+    email = Chris.Rebischke@posteo.de
+    signingkey = DFE2060D
+[credential]
+    helper = cache
+[commit]
+    gpgsign = true
+[github]
+    user = shibumi
