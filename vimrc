@@ -5,6 +5,7 @@ set bg=light
 highlight Pmenu ctermbg=black ctermfg=white
 highlight PmenuSel ctermbg=white ctermfg=black
 filetype plugin on
+filetype plugin indent on
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
 command W w !sudo tee > /dev/null %
@@ -45,3 +46,4 @@ set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
+packadd matchit
