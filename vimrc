@@ -10,7 +10,7 @@ filetype plugin on
 command W w !sudo tee > /dev/null %
 set wildmenu
 set hidden
-set hlsearch
+set nohlsearch
 set autoindent
 set smartindent
 "set number
