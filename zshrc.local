@@ -1,0 +1,8 @@
+alias muttg="mutt -F ~/.config/mutt/muttrc.google"
+alias muttu="mutt -F ~/.config/mutt/muttrc.tu-clausthal" 
+alias muttm="mutt -F ~/.config/mutt/muttrc.milliways"
+alias muttp="mutt -F ~/.config/mutt/muttrc.posteo"
+alias gdb="gdb -q"
+alias i3lock="i3lock -p win -u -t -i /usr/share/i3lock/windows_10_small.png"
+alias i3lockh="i3lock -p win -u -t -i /usr/share/i3lock/windows_10.png"
+alias mksrcinfo="makepkg --printsrcinfo > .SRCINFO"
