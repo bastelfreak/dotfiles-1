@@ -1,5 +1,5 @@
 class zsh (
-  String $user,
+  String $user = 'shibumi',
   Array $plugins = [
     'zsh',
     'grml-zsh-config',
