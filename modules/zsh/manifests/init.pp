@@ -1,10 +1,11 @@
 class zsh (
-  $user
-) {
+  $user,
   $plugins = [ 
     'zsh',
     'grml-zsh-config',
   ]
+
+) {
 
   package { $plugins: ensure => 'present' }
 
