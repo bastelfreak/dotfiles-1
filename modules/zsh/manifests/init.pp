@@ -12,21 +12,21 @@ class zsh (
   file { "/home/${user}/.zshrc":
     owner  => $user,
     group  => $user,
-    mode   => "0644",
-    source => "puppet:///modules/zsh/files/zshrc",
+    mode   => '0644',
+    source => "puppet:///modules/${module_name}/files/zshrc",
   }
 
   file { "/home/${user}/.zshrc.local":
     owner  => $user,
     group  => $user,
-    mode   => "0644",
-    source => "puppet:///modules/zsh/files/zshrc.local",
+    mode   => '0644',
+    source => "puppet:///modules/${module_name}/files/zshrc.local",
   }
 
   file { "/home/${user}/.zshrc.pre":
     owner  => $user,
     group  => $user,
-    mode   => "0644",
-    source => "puppet:///modules/zsh/files/zshrc.pre",
+    mode   => '0644',
+    source => "puppet:///modules/${module_name}/files/zshrc.pre",
   }
 }
