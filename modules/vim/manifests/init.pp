@@ -1,4 +1,4 @@
-class vim {
+class vim ($user) {
   $plugins = [ 
     'vim', 
     'vim-airline', 
@@ -13,9 +13,9 @@ class vim {
 
   package { $plugins: ensure => 'present' }
 
-  file { "/home/$user/.vimrc":
-    owner  => "$user",
-    group  => "$user",
+  file { "/home/${user}/.vimrc":
+    owner  => "${user}",
+    group  => "${user}",
     mode   => "0644",
     source => "puppet:///modules/vim/files/vimrc",
   }
