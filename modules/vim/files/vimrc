@@ -35,6 +35,8 @@ au BufNewFile ASA-* call feedkeys("Iarchsec\<TAB>","")
 au BufNewFile PKGBUILD call feedkeys("IPKGBUILD\<TAB>"."")
 au FileType PKGBUILD setl ts=2 sts=2 sw=2 et tw=79 syntax=sh
 au FileType INSTALL setl ts=2 sts=2 sw=2 et tw=79 syntax=sh
+au FileType ruby,haml,yaml,scss,coffee,html setlocal sw=2 ts=2 sts=2 et tw=79
+au FileType puppet setl ts=2 sts=2 sw=2 et tw=79
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 map <C-J> :bprev!<CR>
@@ -50,5 +52,4 @@ packadd matchit
 set pastetoggle=<INS>
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
-au FileType ruby,haml,yaml,scss,coffee,html setlocal sw=2 ts=2 sts=2 et
 let g:sneak#label = 1
