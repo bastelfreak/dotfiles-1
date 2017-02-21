@@ -1,4 +1,6 @@
-class zsh ($user) {
+class zsh (
+  $user
+) {
   $plugins = [ 
     'zsh',
     'grml-zsh-config',
